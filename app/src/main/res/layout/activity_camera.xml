@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:innerrect="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <SurfaceView
+        android:id="@+id/sv_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mz_cloud.djt.djtadvanced.DetectionView
+        android:id="@+id/dv_detection_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        innerrect:inner_height="180dp"
+        innerrect:inner_margintop="150dp"
+        innerrect:inner_width="180dp" />
+
+</android.support.constraint.ConstraintLayout>
